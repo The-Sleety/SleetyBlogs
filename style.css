@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/background.png);
+    background-size: auto;
+  }
+  
+  #content {
+    display: flex;
+  }
+  
+  #sidebar {
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100vh;
+  }
+
+
+  #main {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .window{
+    margin: 15px;
+  }
+
+  .blog {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  #navbar {
+    background-image: url(/img/winxp.jpeg);
+    color: #fff;
+    padding: 6.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  #navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
