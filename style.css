@@ -13,7 +13,7 @@ body {
   #sidebar {
     width: 25%;
     background-color: #f1f1f1;
-    height: 100vh;
+    height: 300vh;
   }
 
 
@@ -57,3 +57,11 @@ body {
     text-decoration: none;
   }
   
+  .abourmetext{
+    overflow: hidden;
+    box-sizing: content-box;
+    width: 290px;
+    line-height: 20px;
+    font-family: Helvetica, sans-serif;
+    max-lines: 3;
+  }
