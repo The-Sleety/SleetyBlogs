@@ -1,45 +1,122 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Sleety's Blogs</title>
   <link rel="stylesheet" href="https://unpkg.com/xp.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="./img/icons/Internet Shortcut.png" type="image/x-icon">
 </head>
-<body>
-  <div id="content">
-    <aside id="sidebar" class="window" style="width: 400px; height: 500px;">
-        <div class="title-bar">
-            <div class="title-bar-text">aboutMe.exe</div>
+    <main id="main">   
+        
+
+        <div class="icon-container">
+                <img src="./img/icons/mycomputer.webp" alt="Website Icon" class="small-icon" href ="https://itch.io">
+                <p class="icon-label" style="color: aliceblue;">My Computer</p>
+            </a>
         </div>
-        <img src="/img/pfp.png" alt="pfp" style="border-radius: 50%; display: block; margin-left: 95px; margin-top: 10px; width: auto;">
-        <a style="font-size:xx-large; margin-left: 28.5%; color: black;">About Me</a>
-        <p style="font-size: large;padding:5%;margin-left: 10px; text-decoration: none;" class="abourmetext">Hello, i'm Bora (a.k.a Sleety). I'm a game and a web developer. I make websites for fun, i wanted to make a blog website to write my devlogs and blogs to and i finially did it. You may ask "Why WindowsXP theme" and my answer is... Idk, i like the nostalgia of the os. Any way you can visit my <a href="https://the-sleety.github.io/" style="color:rgb(202, 0, 0);">main website</a> too, good bye.</p>
-    
 
-
-    </aside>
-    <main id="main">        
-    <h2 style="text-align: center; ">My Blogs</h2>
-
-
-        <!--blogbox start-->
-      <div class="window" style="width: auto;">
-        <div class="title-bar">
-          <div class="title-bar-text">Announcement!-Hello World.exe 09.18.23 / 10 p.m.</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
+        <div class="icon-container">
+                <img src="./img/icons/recycling_bin.png" alt="Website Icon" class="small-icon" href ="https://itch.io">
+                <p class="icon-label" style="color: aliceblue;">RecyclingBin</p>
+            </a>
         </div>
-        <div class="window-body">
-          <div class="blog">
-            <h3>Hello World. Announcement!</h3>
-                <p><a style="font-size: large; color: black;">Hello whoever is reading this, today 09.18.23 i made this website public.this website will basicly my blog devlog website. I'll probably pin this post, but i will write more thanks. Btw you can see my older posts that i made before the release. </a></p>        <!--Hello this is a comment i hope is not showing up just wanted to say that you can copy from blog box start to end :D-->
-            </div>
+
+        <div class="icon-container" onclick="openWindow('aboutme')">
+            <img src="./img/icons/Command Prompt.png" alt="Website Icon" class="small-icon">
+            <p class="icon-label">
+                <a href="./blogs.html" target="_blank" style="color: aliceblue;">AboutMe.exe</a>
+            </p>
         </div>
+
+        <div class="icon-container" onclick="openWindow('myprojects')">
+            <img src="./img/icons/folder.png" alt="Website Icon" class="small-icon">
+            <p class="icon-label">
+                <a href="https://www.example.com" target="_blank" style="color: aliceblue;">MyProjects</a>
+            </p>
+        </div>
+
+        <div class="icon-container">
+            <a href="./devlogs.html" target="_blank">
+                <img src="./img/icons/users.webp" alt="Website Icon" class="small-icon">
+                <p class="icon-label" style="color: aliceblue;">MyDevlogs</p>
+            </a>
+        </div>
+
+        <!--icon box start-->
+
+        <div class="icon-container">
+            <a href="https://itch.io/" target="_blank">
+                <img src="./img/icons/itch.png" alt="Website Icon" class="small-icon" href ="https://itch.io">
+                <p class="icon-label" style="color: aliceblue;">Itch.io</p>
+            </a>
+        </div>
+        
+        <!--icon box end-->
+
+        <div class="icon-container">
+            <a href="https://github.com" target="_blank">
+                <img src="./img/icons/github.webp" alt="Website Icon" class="small-icon" href ="https://github.com">
+                <p class="icon-label" style="color: aliceblue;">Github</p>
+            </a>
+        </div>
+
+        <div class="icon-container" onclick="openWindow('Ie')">
+          <img src="./img/icons/IE6.png" alt="Website Icon" class="small-icon">
+          <p class="icon-label">
+              <a href="./blogs.html" target="_blank" style="color: aliceblue;">Internet Explorer</a>
+          </p>
       </div>
-      <!--BlogBox end-->
+          
+          <div class="window" id="aboutme" style="display: none; width: 50%; height: 60%;">
+            <div class="title-bar">
+              <div class="title-bar-text">AboutMe.exe</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close" onclick="closeWindow('aboutme')"></button>
+              </div>
+            </div>
+            <div class="window-body"> 
+              <img src="/img/pfp.png" alt="pfp" style="border-radius: 50%; display: block; margin-left: 38%; margin-top: 10px; width: auto;">
+              <a style="font-size:xx-large; margin-left: 40%; color: black;">About Me</a>
+              <p style="font-size: x-large; padding: 10px;">Hello and welcome to my website, thanks for visiting it. My name is Bora you can call me Sleety. I'm a self thought developer. i like making websites and games. I primarily use Godot Engine to make games and use Html, Css and Js to make website. I know html,css,js,c++, a little bit c, java and some more. if you want to reach me out you can text me from <a href="https://www.instagram.com/sleetydev/" style="color: #E1306C;">Instagram,</a> <a href="https://twitter.com/TheSleety" style="color: 	#1DA1F2;"> Twitter</a> or you can come tomy <a href="https://discord.gg/ZAhjZnCUbd" style="color: 	#5865F2;">Discord server</a>, bye.</p>
+              </div>
+          </div>
+
+          <div class="window" id="myprojects" style="display: none; width: 60%; height: 70%;">
+            <div class="title-bar">
+              <div class="title-bar-text">My Projects</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close" onclick="closeWindow('myprojects')"></button>
+              </div>
+            </div>
+            <div class="window-body">   
+              <p style="font-size: xx-large;">coming soon...</p>
+            </div>
+          </div>
+
+          <div class="window" id="Ie" style="display: none; width: 60%; height: 70%;">
+            <div class="title-bar">
+              <div class="title-bar-text">Internet Explorer.exe</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close" onclick="closeWindow('Ie')"></button>
+              </div>
+            </div>
+            <div class="window-body">  
+              <iframe src="https://www.google.com/webhp?igu=1" height=92%"></iframe> 
+            </div>
+          </div>
+          
+          <!--start Menu-->
+
+          
+
+          <!--<iframe src="https://www.google.com/webhp?igu=1"></iframe>-->
 
     </main>
   </div>
@@ -54,5 +131,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-

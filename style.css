@@ -3,32 +3,92 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(/img/background.png);
-    background-size: auto;
-  }
-  
-  #content {
-    display: flex;
-  }
-  
-  #sidebar {
-    width: 25%;
-    background-color: #f1f1f1;
-    height: 300vh;
+    background-size: 100%;
   }
 
+
+  button{
+    cursor: url(./img/cursors/default_link.cur), pointer;
+  }
+  
+  a {
+    text-decoration: none; /* Remove the underline */
+  }
+
+  iframe {
+    width: 100%;
+    border: none; /* Remove iframe border */
+    overflow: hidden; /* Hide scrollbars */
+    cursor: url('./img/cursors/default_arrow.cur'), auto;
+}
+
+a{
+  cursor: url(./img/cursors/default_link.cur), pointer;
+
+}
+
+/* Add this CSS to your existing styles */
+  * {
+    cursor: url('./img/cursors/default_arrow.cur'), auto;
+  }
+
+.title-bar {
+  cursor: url(./img/cursors/default_move.cur),move;
+  user-select: none; 
+}
+
+.window-body {
+  height: 100%;
+  cursor: url('./img/cursors/default_arrow.cur'), auto;
+}
+
+
+  #content {
+    display: flex;cursor: url('./img/cursors/default_arrow.cur'), auto;
+
+  }
 
   #main {
     width: 75%;
     padding: 20px;
+    cursor: url('./img/cursors/default_arrow.cur'), auto;
+  }
+
+  .small-icon {
+    cursor: url(./img/cursors/default_link.cur), pointer;
+    width: 50px; /* Set the width to your desired size */
+    height: 50px; /* Set the height to your desired size */
   }
   
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    width: 50px;
+  }
+
+  .icon-item {
+    margin-bottom: 15px; /* Increase the gap between icons */
+  }
+
+  .icon-label {
+    margin-top: 5px; /* Decrease the space between icons and text */
+  }
+
   .window{
-    margin: 15px;
+    cursor: url('./img/cursors/default_arrow.cur'), auto;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 0%;
   }
 
   .blog {
     margin-bottom: 20px;
     padding: 10px;
+    
   }
   
   #navbar {
@@ -64,4 +124,5 @@ body {
     line-height: 20px;
     font-family: Helvetica, sans-serif;
     max-lines: 3;
+    cursor: url('./img/cursors/default_arrow.cur'), auto;
   }
