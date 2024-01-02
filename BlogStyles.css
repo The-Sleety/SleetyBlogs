@@ -5,6 +5,17 @@ body {
     background-image: url(/img/background.png);
     background-size: auto;
   }
+
+  iframe {
+    width: 100%;
+    border: none; /* Remove iframe border */
+    overflow: hidden; /* Hide scrollbars */
+    cursor: url('./img/cursors/default_arrow.cur'), auto;
+}
+
+p{
+  font-size: large;
+}
   
   #content {
     display: flex;
