@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sleety's Blogs</title>
+  <title>Sleety's Desktop</title>
   <link rel="stylesheet" href="https://unpkg.com/xp.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" href="./img/icons/Internet Shortcut.png" type="image/x-icon">
@@ -11,28 +11,28 @@
         
 
         <div class="icon-container">
-                <img src="./img/icons/mycomputer.webp" alt="Website Icon" class="small-icon" href ="https://itch.io">
+                <img src="./img/icons/mycomputer.webp" alt="Website Icon" class="small-icon">
                 <p class="icon-label" style="color: aliceblue;">My Computer</p>
             </a>
         </div>
 
         <div class="icon-container">
-                <img src="./img/icons/recycling_bin.png" alt="Website Icon" class="small-icon" href ="https://itch.io">
+                <img src="./img/icons/recycling_bin.png" alt="Website Icon" class="small-icon">
                 <p class="icon-label" style="color: aliceblue;">RecyclingBin</p>
             </a>
         </div>
 
         <div class="icon-container" onclick="openWindow('aboutme')">
-            <img src="./img/icons/Command Prompt.png" alt="Website Icon" class="small-icon">
+            <img src="./img/icons/Floppy Disk.png" alt="Website Icon" class="small-icon">
             <p class="icon-label">
-                <a href="./blogs.html" target="_blank" style="color: aliceblue;">AboutMe.exe</a>
+                <a href="_blank" target="_blank" style="color: aliceblue;">AboutMe.exe</a>
             </p>
         </div>
 
-        <div class="icon-container" onclick="openWindow('myprojects')">
-            <img src="./img/icons/folder.png" alt="Website Icon" class="small-icon">
+        <div class="icon-container" onclick="openWindow('MS-DOS')">
+            <img src="./img/icons/Command Prompt.png" alt="Website Icon" class="small-icon">
             <p class="icon-label">
-                <a href="https://www.example.com" target="_blank" style="color: aliceblue;">MyProjects</a>
+                <a href="_blank" target="_blank" style="color: aliceblue;">MS-DOS</a>
             </p>
         </div>
 
@@ -43,11 +43,11 @@
           </a>
       </div>
 
-      <div class="icon-container">
-        <a href="./anouncements.html" target="_blank">
-            <img src="./img/icons/users.webp" alt="Website Icon" class="small-icon">
-            <p class="icon-label" style="color: aliceblue;">Announcements</p>
-        </a>
+      <div class="icon-container" onclick="openWindow('myprojects')">
+        <img src="./img/icons/folder.png" alt="Website Icon" class="small-icon">
+        <p class="icon-label">
+            <a target="_blank" style="color: aliceblue;">MyProjects</a>
+        </p>
     </div>
 
 
@@ -55,7 +55,7 @@
 
         <div class="icon-container">
             <a href="https://itch.io/" target="_blank">
-                <img src="./img/icons/itch.png" alt="Website Icon" class="small-icon" href ="https://itch.io">
+                <img src="./img/icons/itch.png" alt="Website Icon" class="small-icon" href ="https://thesleety.itch.io">
                 <p class="icon-label" style="color: aliceblue;">Itch.io</p>
             </a>
         </div>
@@ -64,7 +64,7 @@
 
         <div class="icon-container">
             <a href="https://github.com" target="_blank">
-                <img src="./img/icons/github.webp" alt="Website Icon" class="small-icon" href ="https://github.com">
+                <img src="./img/icons/github.webp" alt="Website Icon" class="small-icon" href ="https://github.com/The-Sleety">
                 <p class="icon-label" style="color: aliceblue;">Github</p>
             </a>
         </div>
@@ -72,9 +72,11 @@
         <div class="icon-container" onclick="openWindow('Ie')">
           <img src="./img/icons/IE6.png" alt="Website Icon" class="small-icon">
           <p class="icon-label">
-              <a href="./blogs.html" target="_blank" style="color: aliceblue;">Internet Explorer</a>
+              <a href="_blank" target="_blank" style="color: aliceblue;">Internet Explorer</a>
           </p>
       </div>
+
+
           
           <div class="window" id="aboutme" style="display: none; width: 50%; height: 60%;">
             <div class="title-bar">
@@ -119,6 +121,22 @@
               <iframe src="https://www.google.com/webhp?igu=1" height=92%"></iframe> 
             </div>
           </div>
+
+
+          <div class="window" id="MS-DOS" style="display: none; width: 60%; height: 70%;">
+            <div class="title-bar">
+              <div class="title-bar-text">MS-DOS.exe</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close" onclick="closeWindow('MS-DOS')"></button>
+              </div>
+            </div>
+            <div class="window-body">  
+              <iframe src="https://the-sleety.github.io/WebDOS/" height=92%"></iframe> 
+            </div>
+          </div>
+          
           
           <!--start Menu-->
 
@@ -131,8 +149,9 @@
 
   <div id="navbar">
     <ul>
-      <li><a href="/devlogs.html" style="margin-left: 10%; font-size: medium;">Devlogs</a></li>
-      <li><a href="/anouncements.html" style="margin-left: 5%; font-size: medium;">Blogs</a></li>
+      <li><a href="/index.html" style="margin-left: 10%; font-size: medium;">Desktop</a></li>
+      <li><a href="/devlogs.html" style="margin-left: 5%; font-size: medium;">Devlogs</a></li>
+      <li><a href="/anouncements.html" style="margin-left: 5%; font-size: medium;">Announcements</a></li>
     </ul>
   </div>
 
